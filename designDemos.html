@@ -36,6 +36,7 @@
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <!-- SITE TITLE -->
     <title>Praveenmanchi</title>
+
     <link rel = "icon" type = "image/png" href = "images/robin-hood.png"> 
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,600,700,700i,800,900"
         rel="stylesheet">
@@ -46,6 +47,7 @@
     <link href="css/responsive.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
     <link href="css/design-demos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="added.css">
     <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="https://gmpg.org/xfn/11">
@@ -122,6 +124,12 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 html:not( .jetpack-lazy-images-js-enabled ):not( .js ) .jetpack-lazy-image {
 display: none;
 }
+    .item-pointer {
+        cursor: pointer;
+    }
+    .image {
+        border-radius: 20px;
+    }
 </style>
 <script>
 document.documentElement.classList.add(
@@ -150,12 +158,12 @@ document.documentElement.classList.add(
     <div class="navbar navbar-default navbar-fixed-top menu-top dark_bg_menu">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <!-- <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
-                </button>
+                </button> -->
                 <a href="welcome.html" class="navbar-brand top-name-title">
                     <!-- <img src="images/logo2.png" alt="logo"> -->
                     <b>Praveen Manchi</b>
@@ -165,12 +173,8 @@ document.documentElement.classList.add(
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="welcome.html" class="smoothScroll">Home</a></li>
                     <li><a href="welcome.html" class="smoothScroll">About Me</a></li>
-                    <!-- <li><a href="#Discover" class="smoothScroll">Discover</a></li>
-							<li><a href="#uxdesign" class="smoothScroll">UX Design</a></li> -->
                     <li><a href="designDemos.html" class="smoothScroll">Design's</a></li>
                     <li><a href="welcome.html" class="smoothScroll">Portfolio's</a></li>
-                    <!-- <li><a href="#resume" class="smoothScroll">Reach me</a></li>	
-							<li><a href="#blog" class="smoothScroll">Blog</a></li>													 -->
                     <li><a href="welcome.html" class="smoothScroll">Reach Me</a></li>
                 </ul>
             </div>
@@ -214,270 +218,320 @@ document.documentElement.classList.add(
         </div>
     </section>
 
+<!-- CARDS-CONTAINER -->
+    <div class="bg-container" id="displayingCards">
+        <div class="cards-container">
+            <div class="width">
+                <a href="BabyCare.html">
+                    <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?resize=1024%2C768&ssl=1" class="image" id="image1" />
+                    <h1 class="heading"> CISCO - Remote Consultation App for Parents</h1>
+                    <p class="para"> Case Study</p>
+                </a>
+            </div>
+            <div>
+                <a href="LingoCards.html">
+                    <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?resize=1024%2C768&ssl=1" class="image" id="image2" />
+                    <h1 class="heading">LingoCards - Language Learning App</h1>
+                    <p class="para"> Case Study</p>
+                </a>
+            </div>
+        </div>
+        <div class="cards-container">
+            <div>
+                <a href="PerfectProperties.html">
+                    <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?resize=1024%2C768&ssl=1" class="image" id="image3" />
+                    <h1 class="heading"> Perfect Properties - Web App for House Buyers</h1>
+                    <p class="para">Case Study - Coming Soon on the website, in the meantime, check it on Behance.</p>
+                </a>
+            </div>
+            <div>
+                <a href="DailyUIChallenge.html">
+                    <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?resize=1024%2C768&ssl=1" class="image" id="image4" />
+                    <h1 class="heading">Daily UI Challenge Collection</h1>
+                </a>
+            </div>
+        </div>
 
-    <!--DESIGNS MAIN SECTION-->
-    <section class="designs-main-section">
-        <div class="elementor-container elementor-column-gap-no">
-            <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-2b8e9a3d" data-id="2b8e9a3d" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-            <section class="elementor-section elementor-inner-section elementor-element elementor-element-14c8c776 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="14c8c776" data-element_type="section">
-            <div class="elementor-container elementor-column-gap-default">
-            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-30efb9b8" data-id="30efb9b8" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-3ca2e38e elementor-cta--skin-cover elementor-cta--valign-middle elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="3ca2e38e" data-element_type="widget" data-widget_type="call-to-action.default">
-            <div class="elementor-widget-container">
-            <!--one-->     <a href="babycare/index.html" class="elementor-cta">
-            <div class="elementor-cta__bg-wrapper">
-            <div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
-            <div class="elementor-cta__bg-overlay"></div>
-            </div>
-            <div class="elementor-cta__content">
-            <div class="elementor-content-item elementor-cta__content-item elementor-cta__image elementor-animated-item--grow">
-  <!--two--><img width="1316" height="987" src="../i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1a71d.jpg?fit=1316%2C987&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-lazy-srcset="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?w=1316&amp;ssl=1 1316w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?resize=768%2C576&amp;ssl=1 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/Frame-1-1.jpg?fit=1316%2C987&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />					</div>
-</div>
-            </a>
-            </div>
-            </div>
-            </div>
-            </div>
-            <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-a20d705" data-id="a20d705" data-element_type="column">
-            <div class="elementor-widget-wrap elementor-element-populated">
-            <div class="elementor-element elementor-element-b452ae5 elementor-cta--skin-cover elementor-cta--valign-middle elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="b452ae5" data-element_type="widget" data-widget_type="call-to-action.default">
-            <div class="elementor-widget-container">
-            <!--three--><a href="lingocards/index.html" class="elementor-cta">
-            <div class="elementor-cta__bg-wrapper">
-            <div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
-            <div class="elementor-cta__bg-overlay"></div>
-            </div>
-            <div class="elementor-cta__content">
-            <div class="elementor-content-item elementor-cta__content-item elementor-cta__image elementor-animated-item--grow">
-            <!--four--><img width="1316" height="987" src="../i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987a71d.jpg?fit=1316%2C987&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-lazy-srcset="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?w=1316&amp;ssl=1 1316w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?resize=768%2C576&amp;ssl=1 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/987.jpg?fit=1316%2C987&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />					</div>
-            </div>
-            </a>
-            </div>
-            </div>
-            </div>
-            </div>
-            </div>
-            </section>
-            </div>
-            </div>
-            </div>
+    </div>
+<!-- CARDS-CONTAINER -->
+    <!-- NAVBAR -->
+    
+     <!-- NAVBAR -->
 
-            
-
-<section class="elementor-section elementor-top-section elementor-element elementor-element-411343a elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="411343a" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
-    <div class="elementor-container elementor-column-gap-default">
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-86eb07d" data-id="86eb07d" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-d24ae82 elementor-widget elementor-widget-heading" data-id="d24ae82" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container">
-    <h2 class="elementor-heading-title elementor-size-default">BabyCare - Remote Consultation App for Parents</h2>		</div>
-    </div>
-    <div class="elementor-element elementor-element-1b150c6 elementor-widget elementor-widget-text-editor" data-id="1b150c6" data-element_type="widget" data-widget_type="text-editor.default">
-    <div class="elementor-widget-container">
-    <p>Case Study</p>						</div>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-3be7230" data-id="3be7230" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-42e9a22 elementor-widget elementor-widget-heading" data-id="42e9a22" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container">
-    <h2 class="elementor-heading-title elementor-size-default">LingoCards - Language Learning App</h2>		</div>
-    </div>
-    <div class="elementor-element elementor-element-c64b533 elementor-widget elementor-widget-text-editor" data-id="c64b533" data-element_type="widget" data-widget_type="text-editor.default">
-    <div class="elementor-widget-container">
-    <p>Case Study</p>						</div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-c5e96be elementor-section-content-middle elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="c5e96be" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-no">
-    <div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-af47273" data-id="af47273" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <section class="elementor-section elementor-inner-section elementor-element elementor-element-66df901 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="66df901" data-element_type="section">
-    <div class="elementor-container elementor-column-gap-default">
-    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-39bb70c" data-id="39bb70c" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-9d6a0bd elementor-cta--skin-cover elementor-cta--valign-middle elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="9d6a0bd" data-element_type="widget" data-widget_type="call-to-action.default">
-    <div class="elementor-widget-container">
-    <a href="https://www.behance.net/gallery/125133783/Perfect-Properties" target="_blank" class="elementor-cta" rel="noopener">
-    <div class="elementor-cta__bg-wrapper">
-    <div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
-    <div class="elementor-cta__bg-overlay"></div>
-    </div>
-    <div class="elementor-cta__content">
-    <div class="elementor-content-item elementor-cta__content-item elementor-cta__image elementor-animated-item--grow">
-    <img width="1316" height="987" src="../i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2a71d.png?fit=1316%2C987&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-lazy-srcset="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?w=1316&amp;ssl=1 1316w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?resize=768%2C576&amp;ssl=1 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-12v2.png?fit=1316%2C987&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />					</div>
-    </div>
-    <div class="elementor-ribbon">
-    <div class="elementor-ribbon-inner">Coming Soon</div>
-    </div>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-172c35b" data-id="172c35b" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-4c1a027 elementor-cta--skin-cover elementor-cta--valign-middle elementor-animated-content elementor-widget elementor-widget-call-to-action" data-id="4c1a027" data-element_type="widget" data-widget_type="call-to-action.default">
-    <div class="elementor-widget-container">
-    <a href="daily-ui-challenges/index.html" class="elementor-cta">
-    <div class="elementor-cta__bg-wrapper">
-    <div class="elementor-cta__bg elementor-bg" style="background-image: url();"></div>
-    <div class="elementor-cta__bg-overlay"></div>
-    </div>
-    <div class="elementor-cta__content">
-    <div class="elementor-content-item elementor-cta__content-item elementor-cta__image elementor-animated-item--grow">
-    <img width="1316" height="987" src="../i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2a71d.png?fit=1316%2C987&amp;ssl=1" class="attachment-full size-full jetpack-lazy-image" alt="" loading="lazy" data-lazy-srcset="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?w=1316&amp;ssl=1 1316w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?resize=300%2C225&amp;ssl=1 300w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?resize=1024%2C768&amp;ssl=1 1024w, https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?resize=768%2C576&amp;ssl=1 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/08/Frame-13v2.png?fit=1316%2C987&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />					</div>
-    </div>
-    </a>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    </div>
-    </div>
-    </div>
-    </section>
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-e64299f elementor-section-full_width elementor-hidden-phone elementor-section-height-default elementor-section-height-default elementor-invisible" data-id="e64299f" data-element_type="section" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
-    <div class="elementor-container elementor-column-gap-default">
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-cab5332" data-id="cab5332" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-c2b9f1d elementor-widget elementor-widget-heading" data-id="c2b9f1d" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container">
-    <h2 class="elementor-heading-title elementor-size-default">Perfect Properties - Web App for House Buyers</h2>		</div>
-    </div>
-    <div class="elementor-element elementor-element-7922982 elementor-widget elementor-widget-text-editor" data-id="7922982" data-element_type="widget" data-widget_type="text-editor.default">
-    <div class="elementor-widget-container">
-    <p>Case Study &#8211; Coming Soon on the website, in the meantime, check it on <span style="color: #949494;"><a style="color: #949494;" href="https://www.behance.net/gallery/125133783/Perfect-Properties" target="_blank" rel="noopener">Behance</a></span>.</p>						</div>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-fca30be" data-id="fca30be" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-6c7e0ac elementor-widget elementor-widget-heading" data-id="6c7e0ac" data-element_type="widget" data-widget_type="heading.default">
-    <div class="elementor-widget-container">
-    <h2 class="elementor-heading-title elementor-size-default">Daily UI Challenge Collection</h2>		</div>
-    </div>
-    <div class="elementor-element elementor-element-9795f15 elementor-widget elementor-widget-text-editor" data-id="9795f15" data-element_type="widget" data-widget_type="text-editor.default">
-    <div class="elementor-widget-container">
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    </div>
-    </div>
-            <div data-elementor-type="footer" data-elementor-id="227" class="elementor elementor-227 elementor-location-footer" data-elementor-settings="[]">
-    <div class="elementor-section-wrap">
-    <section class="elementor-section elementor-top-section elementor-element elementor-element-6bb4e41 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="6bb4e41" data-element_type="section" id="footer">
-    <div class="elementor-container elementor-column-gap-default">
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-270dd09" data-id="270dd09" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-61a2ecd elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="61a2ecd" data-element_type="widget" data-widget_type="divider.default">
-    <div class="elementor-widget-container">
-    <div class="elementor-divider">
-    <span class="elementor-divider-separator">
-    </span>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-element elementor-element-b0b5069 elementor-widget elementor-widget-image" data-id="b0b5069" data-element_type="widget" data-widget_type="image.default">
-    <div class="elementor-widget-container">
-    <img width="106" height="40" src="../i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/copyright-logov7ff31.png?fit=106%2C40&amp;ssl=1" class="attachment-large size-large jetpack-lazy-image" alt="" loading="lazy" data-lazy-src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/05/copyright-logov7.png?fit=106%2C40&amp;ssl=1&amp;is-pending-load=1" srcset="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" />															</div>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-0742a72" data-id="0742a72" data-element_type="column">
-    <div class="elementor-widget-wrap elementor-element-populated">
-    <div class="elementor-element elementor-element-be8a728 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="be8a728" data-element_type="widget" data-widget_type="divider.default">
-    <div class="elementor-widget-container">
-    <div class="elementor-divider">
-    <span class="elementor-divider-separator">
-    </span>
-    </div>
-    </div>
-    </div>
-    <div class="elementor-element elementor-element-f3b7118 e-grid-align-right elementor-shape-rounded elementor-grid-0 elementor-widget elementor-widget-social-icons" data-id="f3b7118" data-element_type="widget" data-widget_type="social-icons.default">
-    <div class="elementor-widget-container">
-    <div class="elementor-social-icons-wrapper elementor-grid">
-    <span class="elementor-grid-item">
-    <a class="elementor-icon elementor-social-icon elementor-social-icon-linkedin elementor-animation-grow elementor-repeater-item-6b7eaa7" href="http://www.linkedin.com/in/gmacchione" target="_blank">
-    <span class="elementor-screen-only">Linkedin</span>
-    <i class="fab fa-linkedin"></i>					</a>
-    </span>
-    <span class="elementor-grid-item">
-    <a class="elementor-icon elementor-social-icon elementor-social-icon-dribbble-square elementor-animation-grow elementor-repeater-item-680875f" href="https://dribbble.com/giamacchio" target="_blank">
-    <span class="elementor-screen-only">Dribbble-square</span>
-    <i class="fab fa-dribbble-square"></i>					</a>
-    </span>
-    <span class="elementor-grid-item">
-    <a class="elementor-icon elementor-social-icon elementor-social-icon-behance-square elementor-animation-grow elementor-repeater-item-43502fb" href="https://www.behance.net/gianmarcoma" target="_blank">
-    <span class="elementor-screen-only">Behance-square</span>
-    <i class="fab fa-behance-square"></i>					</a>
-    </span>
-    <span class="elementor-grid-item">
-    <a class="elementor-icon elementor-social-icon elementor-social-icon-envelope elementor-animation-grow elementor-repeater-item-a4bd8c2" href="cdn-cgi/l/email-protection.html#76111f171b1715151e1f1936111b171f1a5815191b" target="_blank">
-    <span class="elementor-screen-only">Envelope</span>
-    <i class="fas fa-envelope"></i>					</a>
-    </span>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </div>
-    </section>
-    </div>
-    </div>
-    <!-- <link rel='stylesheet' id='e-animations-css'  href='https://gmacchione.com/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.5.5' type='text/css' media='all' /> -->
-    <link rel="stylesheet" type="text/css" href="wp-content/cache/wpfc-minified/f2azpvtu/hdjtl.css" media="all"/>
-    <script data-cfasync="false" src="cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type='text/javascript' src='../c0.wp.com/p/jetpack/10.6/_inc/build/photon/photon.min.js' id='jetpack-photon-js'></script>
-    <script type='text/javascript' src='wp-content/uploads/wpmss/wpmssab.minbf23.js?ver=1625708806' id='wpmssab-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/mousewheel-smooth-scroll/js/SmoothScroll.min5b3c.js?ver=1.4.10' id='SmoothScroll-js'></script>
-    <script type='text/javascript' src='wp-content/uploads/wpmss/wpmss.minbf23.js?ver=1625708806' id='wpmss-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/dist/intersection-observer6657.js?minify=false&amp;ver=ba2aa80003251440130b63de19cb609d' id='jetpack-lazy-images-polyfill-intersectionobserver-js'></script>
-    <script type='text/javascript' id='jetpack-lazy-images-js-extra'>
-    /* <![CDATA[ */
-    var jetpackLazyImagesL10n = {"loading_warning":"Images are still loading. Please cancel your print and try again."};
-    /* ]]> */
-    </script>
-    <script type='text/javascript' src='wp-content/plugins/jetpack/jetpack_vendor/automattic/jetpack-lazy-images/dist/lazy-imagesa096.js?minify=false&amp;ver=ae8c0bea6a07ab76470a02053fc74216' id='jetpack-lazy-images-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.minf269.js?ver=1.0.1' id='smartmenus-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min3d36.js?ver=3.3.1' id='elementor-pro-webpack-runtime-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/webpack.runtime.mina25a.js?ver=3.5.5' id='elementor-webpack-runtime-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend-modules.mina25a.js?ver=3.5.5' id='elementor-frontend-modules-js'></script>
-    <script type='text/javascript' id='elementor-pro-frontend-js-before'>
-    var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/gmacchione.com\/wp-admin\/admin-ajax.php","nonce":"5d2a7f1571","urls":{"assets":"https:\/\/gmacchione.com\/wp-content\/plugins\/elementor-pro\/assets\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"google":{"title":"Google+","has_counter":true},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"en_US","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/gmacchione.com\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
-    </script>
-    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/frontend.min3d36.js?ver=3.3.1' id='elementor-pro-frontend-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min05da.js?ver=4.0.2' id='elementor-waypoints-js'></script>
-    <script type='text/javascript' src='../c0.wp.com/c/5.9/wp-includes/js/jquery/ui/core.min.js' id='jquery-ui-core-js'></script>
-    <script type='text/javascript' id='elementor-frontend-js-before'>
-    var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Extra","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Extra","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.5.5","is_static":false,"experimentalFeatures":{"e_dom_optimization":true,"e_optimized_assets_loading":true,"a11y_improvements":true,"e_import_export":true,"e_hidden_wordpress_widgets":true,"landing-pages":true,"elements-color-picker":true,"favorite-widgets":true,"admin-top-bar":true,"form-submissions":true,"video-playlist":true},"urls":{"assets":"https:\/\/gmacchione.com\/wp-content\/plugins\/elementor\/assets\/"},"settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":6,"title":"HomePage%20-%20Gian%20Marco%20Macchione","excerpt":"","featuredImage":false}};
-    </script>
-    <script type='text/javascript' src='wp-content/plugins/elementor/assets/js/frontend.mina25a.js?ver=3.5.5' id='elementor-frontend-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/js/elements-handlers.min3d36.js?ver=3.3.1' id='pro-elements-handlers-js'></script>
-    <script type='text/javascript' src='wp-content/plugins/elementor-pro/assets/lib/sticky/jquery.sticky.min3d36.js?ver=3.3.1' id='e-sticky-js'></script>
-    <script src='../stats.wp.com/e-202207.js' defer></script>
-    <script>
-    _stq = window._stq || [];
-    _stq.push([ 'view', {v:'ext',j:'1:10.6',blog:'192443968',post:'6',tz:'0',srv:'gmacchione.com'} ]);
-    _stq.push([ 'clickTrackerInit', '192443968', '6' ]);
-    </script>
-    </section>
+    <!--<div class="bg1-container display" id="displayOnClickingCards1">-->
+        <!-- BACK BUTTON -->
+        <!--<button class="back-button" id="backButton1">Back</button>-->
+         <!-- image-->
+        <!--<img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/06/BabyCare-Hero-Img-e1623352528972.png?resize=1024%2C529&ssl=1" class="imageoc" />-->
+        <!-- BABE CARE UI UX....-->
+        <!--<span class="BABE-CARE-UI-UX-">BABE CARE UI UX .....</span>
+        <div class="two-flex-items-container">
+            <div class="first-item">
+                <h1 class="first-flex-heading">Overview</h1>
+                <p class="first-flex-para">BabyCare is a Keep track of your baby's development with the free
+                    app and document all the special moms structured timeline.
+                    Using the contactless Beurer clinical thermometer.</p>
+            </div>
+            <div class="second-item">
+                <h1 class="first-flex-heading">Role & Responsibilities</h1>
+                <p class="first-flex-para">Solo UX/UI Designer</p>
+                <ul class="first-flex-para2">
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                    <li>Usability Test</li>
+                    <li>Visual Design</li>
+                </ul>
+            </div>
+            <div class="second-flex-item">
+                <h1 class="second-flex-heading">Sources files with the UI screens</h1>
+                <div class="white-container">
+                <a href="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/06/BabyCare-Hero-Img-e1623352528972.png?resize=1024%2C529&ssl=1"
+                   download><button class="download-button">Download</button>
+                </a>    
+                    
+                </div>
+            </div>
+        </div>-->
+        <!--image1-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-1.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-113">
+        </div>-->
+        <!--MIRO-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-2.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>-->
+        <!--image2-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-3.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-4.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-5.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>-->
+        <!--prototype-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://xd.adobe.com/embed/d91faa6a-0854-4563-8ab0-f76156e87533-8c4c/" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-6.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
 
 
+
+    </div>
+    <div class="bg1-container display" id="displayOnClickingCards2">
+        <button class="back-button" id="backButton2">Back</button>
+        <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/06/LingoCards-Hero-Img.png?resize=1024%2C642&ssl=1" class="imageoc" />-->
+        <!-- BABE CARE UI UX....-->
+        <!--<span class="BABE-CARE-UI-UX-">BABE CARE UI UX .....</span>
+        <div class="two-flex-items-container">
+            <div class="first-item">
+                <h1 class="first-flex-heading">Overview</h1>
+                <p class="first-flex-para">BabyCare is a Keep track of your baby's development with the free
+                    app and document all the special moms structured timeline.
+                    Using the contactless Beurer clinical thermometer.</p>
+            </div>
+            <div class="second-item">
+                <h1 class="first-flex-heading">Role & Responsibilities</h1>
+                <p class="first-flex-para">Solo UX/UI Designer</p>
+                <ul class="first-flex-para2">
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                    <li>Usability Test</li>
+                    <li>Visual Design</li>
+                </ul>
+            </div>
+            <div class="second-flex-item">
+                <h1 class="second-flex-heading">Sources files with UI screens</h1>
+                <div class="white-container">
+                    <button class="download-button">Download</button>
+                </div>
+            </div>
+        </div>-->
+
+        <!--image1-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-1.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-113">
+        </div>-->
+        <!--MIRO-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-2.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>-->
+        <!--image2-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-3.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-4.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-5.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>-->
+        <!--prototype-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://xd.adobe.com/embed/d91faa6a-0854-4563-8ab0-f76156e87533-8c4c/" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-6.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+
+
+
+
+    </div>
+    <div class="bg1-container display" id="displayOnClickingCards3">
+        <button class="back-button" id="backButton3">Back</button>
+        <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/06/BabyCare-Hero-Img-e1623352528972.png?resize=1024%2C529&ssl=1" class="imageoc" />-->
+        <!-- BABE CARE UI UX....-->
+        <!--<span class="BABE-CARE-UI-UX-">BABE CARE UI UX .....</span>
+        <div class="two-flex-items-container">
+            <div class="first-item">
+                <h1 class="first-flex-heading">Overview</h1>
+                <p class="first-flex-para">BabyCare is a Keep track of your baby's development with the free
+                    app and document all the special moms structured timeline.
+                    Using the contactless Beurer clinical thermometer.</p>
+            </div>
+            <div class="second-item">
+                <h1 class="first-flex-heading">Role & Responsibilities</h1>
+                <p class="first-flex-para">Solo UX/UI Designer</p>
+                <ul class="first-flex-para2">
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                    <li>Usability Test</li>
+                    <li>Visual Design</li>
+                </ul>
+            </div>
+            <div class="second-flex-item">
+                <h1 class="second-flex-heading">Sources files with UI screens</h1>
+                <div class="white-container">
+                    <button class="download-button">Download</button>
+                </div>
+            </div>
+        </div>-->
+
+        <!--image1-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-1.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-113">
+        </div>-->
+        <!--MIRO-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-2.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>-->
+        <!--image2-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-3.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-4.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-5.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>-->
+        <!--prototype-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://xd.adobe.com/embed/d91faa6a-0854-4563-8ab0-f76156e87533-8c4c/" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-6.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+
+
+
+    </div>
+    <div class="bg1-container display" id="displayOnClickingCards4">
+        <button class="back-button" id="backButton4">Back</button>
+        <img src="https://i0.wp.com/gmacchione.com/wp-content/uploads/2021/06/BabyCare-Hero-Img-e1623352528972.png?resize=1024%2C529&ssl=1" class="imageoc" />-->
+        <!-- BABE CARE UI UX....-->
+        <!--<span class="BABE-CARE-UI-UX-">BABE CARE UI UX .....</span>
+        <div class="two-flex-items-container">
+            <div class="first-item">
+                <h1 class="first-flex-heading">Overview</h1>
+                <p class="first-flex-para">BabyCare is a Keep track of your baby's development with the free
+                    app and document all the special moms structured timeline.
+                    Using the contactless Beurer clinical thermometer.</p>
+            </div>
+            <div class="second-item">
+                <h1 class="first-flex-heading">Role & Responsibilities</h1>
+                <p class="first-flex-para">Solo UX/UI Designer</p>
+                <ul class="first-flex-para2">
+                    <li>User Research</li>
+                    <li>Prototyping</li>
+                    <li>Usability Test</li>
+                    <li>Visual Design</li>
+                </ul>
+            </div>
+            <div class="second-flex-item">
+                <h1 class="second-flex-heading">Sources files with UI screens</h1>
+                <div class="white-container">
+                    <button class="download-button">Download</button>
+                </div>
+            </div>
+        </div>-->
+
+        <!--image1-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-1.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-113">
+        </div>-->
+        <!--MIRO-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-2.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://miro.com/app/live-embed/uXjVOKM2BcA=/?moveToViewport=118,-1002,13929,6484" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>-->
+        <!--image2-->
+        <!--<div style="text-align: center;">
+            <img src="./images/cisco_task/Home-3.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-4.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-5.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>-->
+        <!--prototype-->
+        <!--<div style="text-align: center; margin-bottom: 10px;">
+        <iframe width="1400" height="700" src="https://xd.adobe.com/embed/d91faa6a-0854-4563-8ab0-f76156e87533-8c4c/" frameBorder="0" scrolling="no" allowFullScreen></iframe>
+        </div>
+        
+        <div style="text-align: center;">
+            <img src="./images/cisco_task/Home-6.png" srcset="img/rectangle-113@2x.png 2x,img/rectangle-113@3x.png 3x" class="Rectangle-100">
+        </div>
+
+
+
+    </div>-->
 
     
-    <!--/DESIGNS MAIN SECTION-->
+
+
+   
 
     <footer>
         <div>
@@ -491,6 +545,7 @@ document.documentElement.classList.add(
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
     <script src="js/customJs//designDemos.js"></script>
+    <script src="js/added.js"></script>
 </body>
 
 </html>
