@@ -51,7 +51,8 @@
       float:right;
       height:100%;
       position:relative;
-      width:66.66%;
+      width:67.66%;
+    
   }
   
   
@@ -59,7 +60,6 @@
   {
       background:#000000(0,0,0,.001);
       bottom:0;
-      height:290px;
       left:0;
       margin:auto;
       position:absolute;
@@ -106,7 +106,7 @@
   .name-hero .name-text
   {
       margin:0 auto;
-      width:85%;
+      text-align: center;
   }
   
   .inner
