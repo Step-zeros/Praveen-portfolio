@@ -85,9 +85,10 @@
     position: relative;
     border-radius: 18px;
     display: block;
-    border: 1px solid #000000;
+    border: 1px solid #ffffff;
     margin: 30px auto 0;
 }
+
 
 .insta-follow-section .display_table_cell .banner_content .insta-follow-link img {
     position: absolute;

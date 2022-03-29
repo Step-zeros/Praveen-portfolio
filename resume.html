@@ -37,7 +37,12 @@
 <link rel="stylesheet" href="css/reume.css">
 <link rel="stylesheet" href="css/Resume-1.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
+	$(document).on("click", "#downloadFile", function(){
+		$("#customdownload").click();
+	});
+</script>
 </head>
 <body>
 <!-- partial:index.partial.html -->
@@ -62,7 +67,7 @@
           
        
         </div>
-<div><h3>Download Resuem</h6></div>
+<div style="margin-top: 50px;"><h3>Download Resume</h6></div>
         <a href="./data/UX:UI RESUME.pdf" id="customdownload" download="Praveen(UI/UX)-resume" style="display:none;">Praveen(UI/UX)-resume</a>
 	<button class="button" id="downloadFile">
 			<svg class="circle" viewBox="0 0 76 76">
@@ -104,6 +109,7 @@
 </div>
 <!-- partial -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js'></script>
   <script src='./js/Resume.js'></script>
 
 </body>
