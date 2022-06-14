@@ -31,15 +31,15 @@
 		});
 		/* END MENU-JS */
 
-		/* START ISOTOP JS */
-		var $grid = $('.work_content_area').isotope({
-			// options
-		});
-		// filter items on button click
-		$('.work_filter').on('click', 'li', function () {
-			var filterValue = $(this).attr('data-filter');
-			$grid.isotope({ filter: filterValue });
-		});
+		///* START ISOTOP JS */
+		//var $grid = $('.work_content_area').isotope({
+		//	// options
+		//});
+		//// filter items on button click
+		//$('.work_filter').on('click', 'li', function () {
+		//	var filterValue = $(this).attr('data-filter');
+		//	$grid.isotope({ filter: filterValue });
+		//});
 		// filter items on button click
 		$('.work_filter').on('click', 'li', function () {
 			$(this).addClass('active').siblings().removeClass('active')
@@ -47,10 +47,10 @@
 		/* END ISOTOP JS */
 
 		/* START LIGHTBOX */
-		lightbox.option({
-			'resizeDuration': 200,
-			'wrapAround': true
-		});
+		//lightbox.option({
+		//	'resizeDuration': 200,
+		//	'wrapAround': true
+		//});
 		/* END LIGHTBOX JS */
 
 		/* START COUNDOWN JS */
