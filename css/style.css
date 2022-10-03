@@ -1400,7 +1400,7 @@ position: absolute;
 -----------------------------------------------------------------*/
 .footer {
     padding: 30px 0;
-    background: #1a1a1a;
+    background: #000000;
 }
 .copy-text p{
 	text-align: center;
@@ -1522,8 +1522,8 @@ position: absolute;
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 4rem 0;
+    justify-content: flex-end;
+    padding: 4rem 15px;
     margin-top: 38px;
 }
 .view-more-btn{
@@ -2796,7 +2796,7 @@ body {
 
 /*  footer   */
 footer {
-  background-color: #222;
+  background-color: rgb(0, 0, 0);
   color: #fff;
   font-size: 14px;
   text-align: center;
@@ -2854,4 +2854,20 @@ float:right;
     .container {
         width: 95% !important;
     }
+}
+
+.clients-heading{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 10px;
+}
+.brands-style{
+  font-family: 'Josefin Sans', sans-serif ;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin-bottom: 10px;
 }
