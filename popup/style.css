@@ -1,6 +1,10 @@
-/* popup */
+/**
+ * /* popup
+ *
+ * @format
+ */
 
-.popup{
+.popup {
   width: 100%;
   height: 100vh;
   display: none;
@@ -10,22 +14,22 @@
   right: 0;
 }
 
-#popup-article:target{
+#popup-article:target {
   display: -webkit-box;
   display: flex;
 }
 
-#popup-article1:target{
+#popup-article1:target {
   display: -webkit-box;
   display: flex;
 }
 
-#popup-article2:target{
+#popup-article2:target {
   display: -webkit-box;
   display: flex;
 }
 
-.popup::before{
+.popup::before {
   content: "";
   box-sizing: border-box;
   width: 100%;
@@ -35,19 +39,20 @@
   left: 0;
   top: 50%;
   will-change: height, top;
-  -webkit-animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
-          animation: open-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) .65s both;
+  -webkit-animation: open-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) 0.65s
+    both;
+  animation: open-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) 0.65s both;
 }
 
-.popup::after{
+.popup::after {
   content: "";
   width: 0;
   height: 2px;
   background-color: #f0f0f0;
 
   will-change: width, opacity;
-  -webkit-animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
-          animation: line-animation .6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+  -webkit-animation: line-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
+  animation: line-animation 0.6s cubic-bezier(0.83, 0.04, 0, 1.16) both;
 
   position: absolute;
   top: 50%;
@@ -55,69 +60,65 @@
   margin-top: -1px;
 }
 
-@-webkit-keyframes line-animation{
-
-  0%{
+@-webkit-keyframes line-animation {
+  0% {
     width: 0;
     opacity: 1;
   }
 
-  99%{
+  99% {
     width: 100%;
     opacity: 1;
   }
 
-  100%{
+  100% {
     width: 100%;
     opacity: 0;
-  }  
+  }
 }
 
-@keyframes line-animation{
-
-  0%{
+@keyframes line-animation {
+  0% {
     width: 0;
     opacity: 1;
   }
 
-  99%{
+  99% {
     width: 100%;
     opacity: 1;
   }
 
-  100%{
+  100% {
     width: 100%;
     opacity: 0;
-  }  
+  }
 }
 
-@-webkit-keyframes open-animation{
-
-  0%{
+@-webkit-keyframes open-animation {
+  0% {
     height: 0;
     top: 50%;
   }
 
-  100%{
+  100% {
     height: 100vh;
     top: 0;
   }
 }
 
-@keyframes open-animation{
-
-  0%{
+@keyframes open-animation {
+  0% {
     height: 0;
     top: 50%;
   }
 
-  100%{
+  100% {
     height: 100vh;
     top: 0;
   }
 }
 
-.popup__block{
+.popup__block {
   height: calc(100vh - 40px);
   padding: 5% 15%;
   box-sizing: border-box;
@@ -125,38 +126,36 @@
 
   margin: auto;
   overflow: auto;
-  -webkit-animation: fade .5s ease-out 1.3s both;
-          animation: fade .5s ease-out 1.3s both;
+  -webkit-animation: fade 0.5s ease-out 1.3s both;
+  animation: fade 0.5s ease-out 1.3s both;
 }
 
-@-webkit-keyframes fade{
-
-  0%{
+@-webkit-keyframes fade {
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-@keyframes fade{
-
-  0%{
+@keyframes fade {
+  0% {
     opacity: 0;
   }
 
-  100%{
+  100% {
     opacity: 1;
   }
 }
 
-.popup__title{
+.popup__title {
   font-size: 1.5rem;
   margin: 0 0 1em;
 }
 
-.popup__close{
+.popup__close {
   width: 2rem;
   height: 2rem;
   text-indent: -9999px;
@@ -175,40 +174,41 @@
 * demo page
 */
 
-body{
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans, Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Open Sans,
+    Ubuntu, Fira Sans, Helvetica Neue, sans-serif;
   font-size: 1rem;
   color: #222;
   background-color: #512da8;
   margin: 0;
 }
 
-p{
+p {
   margin: 0;
   line-height: 1.5;
 }
 
-p:nth-child(n+2){
+p:nth-child(n + 2) {
   margin-top: 1rem;
 }
 
-.open-popup{
+.open-popup {
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  padding: .75rem 1.25rem;
+  padding: 0.75rem 1.25rem;
   border: 1px solid;
 }
 
-.page{
+.page {
   min-height: 100vh;
   display: -webkit-box;
   display: flex;
 }
 
-.page__container{
+.page__container {
   max-width: 1200px;
-  padding-left: .75rem;
-  padding-right: .75rem;  
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   margin: auto;
 }

@@ -1,3 +1,5 @@
+/** @format */
+
 .button {
   --default: blue;
   --active: blue;
@@ -13,7 +15,7 @@
   transition: transform 0.2s;
 }
 .button:active {
-  --s: .96;
+  --s: 0.96;
 }
 .button svg {
   display: block;
@@ -34,7 +36,8 @@
   stroke: var(--active);
   stroke-dasharray: 227px;
   stroke-dashoffset: var(--active-offset, 227px);
-  transition: stroke-dashoffset var(--all-transition, 4s) ease var(--all-delay, 0.8s);
+  transition: stroke-dashoffset var(--all-transition, 4s) ease
+    var(--all-delay, 0.8s);
 }
 .button span {
   display: block;
@@ -48,8 +51,9 @@
   color: var(--active);
   opacity: var(--count-opacity, 0);
   transform: translateY(var(--count-y, 4px));
-  -webkit-animation: var(--count, none) 0.3s ease forwards var(--all-delay, 4.6s);
-          animation: var(--count, none) 0.3s ease forwards var(--all-delay, 4.6s);
+  -webkit-animation: var(--count, none) 0.3s ease forwards
+    var(--all-delay, 4.6s);
+  animation: var(--count, none) 0.3s ease forwards var(--all-delay, 4.6s);
   transition: opacity 0.2s ease 0.6s, transform 0.3s ease 0.6s;
 }
 .button .icon {
@@ -72,7 +76,8 @@
   stroke-dashoffset: var(--line-offset, 33px);
   transform: translateY(var(--line-y, 0));
   opacity: var(--line-opacity, 1);
-  transition: stroke-dasharray 0.2s, stroke-dashoffset 0.2s, transform 0.32s ease var(--all-delay, 0.25s);
+  transition: stroke-dasharray 0.2s, stroke-dashoffset 0.2s,
+    transform 0.32s ease var(--all-delay, 0.25s);
 }
 .button .icon div {
   width: 40px;
@@ -84,10 +89,12 @@
   margin-left: -20px;
   transform: translate(var(--icon-x, 0), var(--icon-y, 0));
   transition: transform 0.3s ease var(--all-delay, 4.8s);
-  -webkit-animation: var(--overflow, none) 0s linear forwards var(--all-delay, 4.8s);
-          animation: var(--overflow, none) 0s linear forwards var(--all-delay, 4.8s);
+  -webkit-animation: var(--overflow, none) 0s linear forwards
+    var(--all-delay, 4.8s);
+  animation: var(--overflow, none) 0s linear forwards var(--all-delay, 4.8s);
 }
-.button .icon div:before, .button .icon div:after {
+.button .icon div:before,
+.button .icon div:after {
   content: "";
   position: absolute;
   z-index: 1;
@@ -100,7 +107,8 @@
   transform-origin: var(--tx, 15px) 1px;
   transform: rotate(var(--before-rotate, 0deg));
   opacity: var(--tick-opacity, 0);
-  transition: transform 0.4s ease var(--all-delay, 4.8s), opacity 0s linear var(--all-delay, 4.8s);
+  transition: transform 0.4s ease var(--all-delay, 4.8s),
+    opacity 0s linear var(--all-delay, 4.8s);
 }
 .button .icon div:after {
   --l: 14px;
@@ -125,9 +133,10 @@
   top: 11px;
   transform: translateX(var(--progress-x, 0));
   opacity: var(--progress-opacity, 0);
-  transition: transform var(--all-transition, 4.4s) ease var(--all-delay, 0.4s), opacity 0s linear var(--all-delay, 1s);
+  transition: transform var(--all-transition, 4.4s) ease var(--all-delay, 0.4s),
+    opacity 0s linear var(--all-delay, 1s);
   -webkit-animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
-          animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
+  animation: var(--hide, none) 0s linear forwards var(--all-delay, 4.8s);
 }
 .button.loading:not(.reset) {
   --line-y: -36px;
@@ -150,7 +159,7 @@
 }
 .button.reset {
   --all-delay: 0s;
-  --all-transition: .3s;
+  --all-transition: 0.3s;
 }
 
 @-webkit-keyframes hide {
@@ -194,7 +203,8 @@ html {
 * {
   box-sizing: inherit;
 }
-*:before, *:after {
+*:before,
+*:after {
   box-sizing: inherit;
 }
 

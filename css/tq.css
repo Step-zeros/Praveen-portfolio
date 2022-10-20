@@ -1,3 +1,5 @@
+/** @format */
+
 @import url(https://fonts.googleapis.com/css?family=Oswald:700);
 
 body {
@@ -12,20 +14,23 @@ svg {
   position: relative;
   display: block;
   z-index: 0;
-  
+
   text {
     fill: #fff;
-    font-family: 'Oswald';
+    font-family: "Oswald";
     font-weight: 700;
-   
+
     tspan {
       padding: 0;
       margin: 0;
       opacity: 0;
     }
   }
-  
-  line, polyline, ellipse, path {
+
+  line,
+  polyline,
+  ellipse,
+  path {
     stroke: #fff;
     fill: none;
     stroke-linecap: round;
@@ -34,35 +39,35 @@ svg {
     opacity: 0;
     stroke-miterlimit: 10;
   }
-  
+
   .dec {
     stroke-width: 3;
   }
-  
+
   .underline {
     stroke-width: 6;
     stroke-linecap: butt;
     opacity: 1;
   }
-  
+
   .dot {
     opacity: 1;
   }
-  
+
   .purple {
-    stroke: #B191FF;
+    stroke: #b191ff;
   }
-  
+
   .lime {
-    stroke: #DCE2AA;
+    stroke: #dce2aa;
   }
-  
+
   .plum {
-    stroke: #843B62;
+    stroke: #843b62;
   }
-  
+
   .blue {
-    stroke: #241E4E;
+    stroke: #241e4e;
   }
 }
 
@@ -70,7 +75,7 @@ svg {
   font-size: 10px;
   color: #fff;
   display: block;
-  position: 'relative';
+  position: "relative";
   margin: 0 auto;
   width: 200px;
   text-align: center;

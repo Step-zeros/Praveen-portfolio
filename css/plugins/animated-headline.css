@@ -1,4 +1,6 @@
- .cd-title {
+/** @format */
+
+.cd-title {
   position: relative;
 }
 
@@ -226,7 +228,7 @@ xtype
 }
 .cd-headline.type .cd-words-wrapper::after {
   /* vertical bar */
-  content: '';
+  content: "";
   position: absolute;
   right: 0;
   top: 50%;
@@ -333,7 +335,8 @@ xrotate-2
   -moz-perspective: 300px;
   perspective: 300px;
 }
-.cd-headline.rotate-2 i, .cd-headline.rotate-2 em {
+.cd-headline.rotate-2 i,
+.cd-headline.rotate-2 em {
   display: inline-block;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -510,7 +513,7 @@ xloading-bar
 -------------------------------- */
 .cd-headline.loading-bar span {
   display: inline-block;
-  padding: .2em 0;
+  padding: 0.2em 0;
 }
 .cd-headline.loading-bar .cd-words-wrapper {
   overflow: hidden;
@@ -518,7 +521,7 @@ xloading-bar
 }
 .cd-headline.loading-bar .cd-words-wrapper::after {
   /* loading bar */
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -537,7 +540,7 @@ xloading-bar
   transition: width 3s;
 }
 .cd-headline.loading-bar b {
-  top: .2em;
+  top: 0.2em;
   opacity: 0;
   -webkit-transition: opacity 0.3s;
   -moz-transition: opacity 0.3s;
@@ -555,7 +558,7 @@ xslide
 -------------------------------- */
 .cd-headline.slide span {
   display: inline-block;
-  padding: .2em 0;
+  padding: 0.2em 0;
 }
 .cd-headline.slide .cd-words-wrapper {
   overflow: hidden;
@@ -563,7 +566,7 @@ xslide
 }
 .cd-headline.slide b {
   opacity: 0;
-  top: .2em;
+  top: 0.2em;
 }
 .cd-headline.slide b.is-visible {
   top: 0;
@@ -693,7 +696,7 @@ xclip
 -------------------------------- */
 .cd-headline.clip span {
   display: inline-block;
-  padding: .2em 0;
+  padding: 0.2em 0;
 }
 .cd-headline.clip .cd-words-wrapper {
   overflow: hidden;
@@ -701,7 +704,7 @@ xclip
 }
 .cd-headline.clip .cd-words-wrapper::after {
   /* line */
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   right: 0;
